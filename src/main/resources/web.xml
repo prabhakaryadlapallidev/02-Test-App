@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <bean class="com.dilipit.DI.Address" id="add">
+    <property name="door_no" value="2835"></property>
+    <property name="street_name" value="thota vari veedhi"></property>
+    <property name="village_name" value="Kakarlamudi"></property>
+    </bean>
+    
+    <bean class="com.dilipit.DI.Student">
+    <property name="id" value="1"></property>
+    <property name="name" value="prabhakar"></property>
+    <property name="address" ref="add"></property>
+    </bean>
+    
+    
+</beans>
